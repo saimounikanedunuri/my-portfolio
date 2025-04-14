@@ -1,101 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work Experience - Sai Mounika</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Work Experience</title>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f4f4;
-      margin: 0;
+      color: #333;
       padding: 20px;
+      line-height: 1.6;
     }
+
     .container {
-      max-width: 900px;
-      margin: auto;
+      max-width: 960px;
+      margin: 0 auto;
       background-color: #fff;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    h1 {
-      text-align: center;
-      color: #3f51b5;
+
+    h1, h2, h3 {
+      color: #005792;
     }
-    h2 {
-      color: #333;
+
+    ul {
+      margin-left: 20px;
     }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .skill {
+      background-color: #005792;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .company {
+      margin-top: 20px;
+    }
+
+    .company h3 {
+      margin-bottom: 5px;
+    }
+
     .role {
-      margin-bottom: 25px;
-    }
-    .client {
       font-style: italic;
       color: #666;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li::before {
-      content: '✅';
-      margin-right: 10px;
-      color: #4caf50;
-    }
-    .tech {
-      color: #1e88e5;
-      font-weight: bold;
-    }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>💼 Work Experience</h1>
+    <h1>Professional Summary</h1>
+    <p>Azure Data Engineer with 5.6 years of experience in designing, developing, and optimizing scalable ETL pipelines across Azure (Azure Data Factory, Synapse, Databricks, ADLS Gen2) and AWS (S3, Redshift, EC2) platforms. Skilled in PySpark, Python automation, and REST APIs, with a proven track record of delivering data solutions in the finance and healthcare domains.</p>
 
-    <div class="role">
-      <h2>Capgemini India, Hyderabad – Azure Data Engineer <span class="client">(Oct 2021 – Present)</span></h2>
-      <p><strong>Client: Microsoft</strong></p>
-      <ul>
-        <li>Streamlined data orchestration with ADF pipelines, reducing manual tasks by 40%</li>
-        <li>Optimized data management using Synapse Analytics & ADLS Gen2 (25% efficiency gain)</li>
-        <li>Accelerated workflows in Databricks using PySpark (30% faster processing)</li>
-        <li>Integrated systems via Azure Function Apps & REST APIs (20% boost)</li>
-        <li>Improved metadata governance using Azure Purview (35% transparency increase)</li>
-        <li>Built a Search & Replace automation tool (30% time saved)</li>
-        <li>Created PowerShell PR automation tool (20% developer time saved)</li>
-      </ul>
-      <p class="tech">ADF, Synapse, ADLS Gen2, Databricks, PySpark, Azure Function Apps, REST APIs, Azure Purview</p>
-
-      <p><strong>Client: Johnson & Johnson</strong></p>
-      <ul>
-        <li>Saved 30% storage with AWS S3 retention policies</li>
-        <li>Improved query time by 20% via CSV to Parquet conversion</li>
-        <li>Enhanced pipeline speed by 25% using PySpark on EC2</li>
-        <li>Enabled direct queries in Redshift Spectrum with Parquet files</li>
-      </ul>
-      <p class="tech">AWS S3, PySpark, EC2, Redshift Spectrum, Parquet</p>
-
-      <p><strong>Client: Equans</strong></p>
-      <ul>
-        <li>Boosted PySpark runtime efficiency by 30% with optimized logic</li>
-        <li>Standardized reports with reusable data models in Foundry</li>
-        <li>Tracked end-to-end data lineage for faster debugging</li>
-      </ul>
-      <p class="tech">Palantir Foundry, PySpark, Code Repository</p>
+    <h2>Skills 🚀</h2>
+    <div class="skills">
+      <div class="skill">Azure (ADLS Gen2, Azure Data Factory, Synapse, Databricks)</div>
+      <div class="skill">AWS (S3, Redshift, EC2)</div>
+      <div class="skill">PySpark</div>
+      <div class="skill">Python</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Unix</div>
+      <div class="skill">REST APIs</div>
+      <div class="skill">Postman</div>
+      <div class="skill">Control-M</div>
+      <div class="skill">Palantir Foundry</div>
+      <div class="skill">Azure Purview</div>
     </div>
 
-    <div class="role">
-      <h2>Sears Holdings India, Hyderabad – Azure Data Engineer <span class="client">(Oct 2019 – Aug 2021)</span></h2>
+    <h2>Work Experience 💼</h2>
+
+    <div class="company">
+      <h3>Capgemini India, Hyderabad - Azure Data Engineer</h3>
+      <p class="role">Oct 2021 - Present</p>
+
+      <h4>Microsoft</h4>
       <ul>
-        <li>Automated workflows in ADF (35% less manual effort)</li>
-        <li>Managed Azure Blob Storage, cutting storage costs by 30%</li>
-        <li>Resolved Control-M job issues, improving resolution by 30%</li>
-        <li>Automated daily tasks using Python (higher accuracy, lower effort)</li>
+        <li>Streamlined data orchestration by building and maintaining ADF pipelines, reducing manual intervention by 40%.</li>
+        <li>Enhanced large-scale data management using Synapse Analytics and ADLS Gen2, achieving a 25% gain in efficiency.</li>
+        <li>Accelerated processing workflows by 30% through data cleaning and transformation in Databricks using PySpark.</li>
+        <li>Boosted system integration by 20% by creating Azure Function Apps and utilizing REST APIs for CRUD operations.</li>
+        <li>Elevated data transparency by 35% through robust metadata tracking using Azure Purview for governance.</li>
+        <li>Reduced manual input time by 30% with a custom-built Search and Replace automation tool.</li>
+        <li>Simplified pull request workflows by developing a PowerShell-based PR automation tool, saving 20% developer time.</li>
+        <li>ADF, Synapse, ADLS Gen2, Databricks, PySpark, Azure Function Apps, REST APIs, Azure Purview</li>
       </ul>
-      <p class="tech">ADF, Azure Blob Storage, Control-M, Python, Unix</p>
+
+      <h4>Johnson & Johnson</h4>
+      <ul>
+        <li>Lowered storage expenditure by 30% by implementing effective retention policies within AWS S3.</li>
+        <li>Optimized query execution times by 20% by converting CSV files to Parquet format.</li>
+        <li>Enhanced data pipeline speed by 25% using PySpark on EC2 for transformation, cleaning, and schema validation.</li>
+        <li>performing data cleaning, transformation, and schema evaluation on EC2 using PySpark.</li>
+        <li>Maximized Redshift performance by leveraging Spectrum for direct querying on Parquet files stored in S3.</li>
+        <li>AWS S3, PySpark, EC2, Redshift Spectrum, Parquet</li>
+      </ul>
+
+      <h4>Equans</h4>
+      <ul>
+        <li>Updated PySpark transformation logic in the Code Repository, leading to a 30% boost in runtime efficiency.</li>
+        <li>Standardized financial reporting by designing reusable data models in Palantir Foundry, increasing reliability by 20%.</li>
+        <li>Ensured data traceability and quicker issue resolution by managing end-to-end lineage in Foundry.</li>
+        <li>Palantir Foundry, PySpark, Code Repository</li>
+      </ul>
     </div>
 
+    <div class="company">
+      <h3>Sears Holdings India, Hyderabad - Azure Data Engineer</h3>
+      <p class="role">Oct 2019 - Aug 2021</p>
+      <ul>
+        <li>Automated end-to-end workflows using ADF, reducing manual effort by 35%.</li>
+        <li>Managed Azure Blob Storage for optimized file handling, resulting in 30% storage cost savings.</li>
+        <li>Diagnosed and resolved Control-M job failures, reducing incident resolution time by 30%.</li>
+        <li>Scripted daily automation tasks in Python, improving task accuracy and reducing overhead.</li>
+        <li>Azure Data Factory (ADF), Azure Blob Storage, Control-M, Python, Unix</li>
+      </ul>
+    </div>
   </div>
 </body>
+
 </html>
