@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Data Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>📂 My Projects</h1>
-        <nav>
-            <a href="index.html">🏠 Home</a>
-            <a href="skills.html">💡 Skills</a>
-            <a href="work.html">💼 Work</a>
-            <a href="projects.html" class="active">📂 Projects</a>
-            <a href="contact.html">📩 Contact</a>
-        </nav>
-    </header>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="projects">
-        <h2>🚀 Featured Projects</h2>
-        <div class="project">
-            <h3>🔍 AWS Data Pipeline Optimization</h3>
-            <p>Reduced ETL processing time by 40% using AWS Glue & Redshift.</p>
-        </div>
+  <main>
+    <h2>Projects</h2>
+    <div class="card-container">
 
-        <div class="project">
-            <h3>📊 Real-time Data Streaming</h3>
-            <p>Built a Kafka-based pipeline for financial data processing.</p>
-        </div>
-    </section>
+      <div class="card">
+        <h3>Sales Data Analysis (Power BI)</h3>
+        <p>Analyzed yearly sales and profit data using visualizations like bar charts, pie charts, scatterplots, and treemaps. Created sales and profit cards for yearly insights.</p>
+        <a href="https://github.com/yourusername/sales-analysis-powerbi" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Finance Data Analysis (PySpark)</h3>
+        <p>Performed data cleaning, validation, and transformations using PySpark. Included aggregations, window functions, and Parquet conversions. Demonstrated PySpark best practices in Jupyter Notebook.</p>
+        <a href="https://github.com/yourusername/finance-data-pyspark" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Python To-Do List App</h3>
+        <p>Created a command-line to-do list application in Python that supports task creation, updating, deleting, and saving to a local CSV file.</p>
+        <a href="https://github.com/yourusername/python-todo-list" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Personal Expense Tracker (Python)</h3>
+        <p>Developed a console-based expense tracker that allows users to record expenses, view all transactions, and get monthly summaries stored in CSV files.</p>
+        <a href="https://github.com/yourusername/expense-tracker" target="_blank">View on GitHub</a>
+      </div>
+
+    </div>
+  </main>
 </body>
 </html>
