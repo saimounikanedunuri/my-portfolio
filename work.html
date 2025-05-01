@@ -1,161 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Work Experience</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
-      margin: 0;
-      padding: 20px;
-      color: #333;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 32px;
-      color: #222;
-    }
-
-    .company {
-      margin-bottom: 25px;
-    }
-
-    .company h2 {
-      font-size: 24px;
-      background-color: #004080;
-      color: white;
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .project {
-      background-color: white;
-      margin: 10px 0;
-      padding: 15px;
-      border-left: 4px solid #004080;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    .project:hover {
-      background-color: #f0f4f8;
-    }
-
-    .project-details {
-      display: none;
-      padding: 10px 15px;
-      background-color: #f9f9f9;
-      border-left: 4px solid #0099cc;
-      border-radius: 0 0 8px 8px;
-      margin-top: -10px;
-    }
-
-    .skills {
-      font-style: italic;
-      color: #444;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience - Azure Data Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>ðŸ’¼ Work Experience</h1>
+        <p>Click on each card to view more details</p>
+        <nav>
+            <a href="index.html">ðŸ  Home</a>
+            <a href="skills.html">ðŸ’¡ Skills</a>
+            <a href="work.html" class="active">ðŸ’¼ Work</a>
+            <a href="projects.html">ðŸ“‚ Projects</a>
+            <a href="contact.html">ðŸ“© Contact</a>
+        </nav>
+    </header>
 
-  <header>
-    <h1>💼 Work Experience</h1>
-    <p>Tap a project to see what I worked on</p>
-  </header>
+    <section class="card-grid">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Capgemini India</h2>
+                    <p>Project: Takeda</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Skills</h3>
+                    <p>PySpark, Python, SQL, Spark, Databricks, AWS, S3, Delta, PostgreSQL</p>
+                    <h3>Project Details</h3>
+                    <p>Scripted KPIs, automated workflows, improved logging, Git integration.</p>
+                    <h3>My Role</h3>
+                    <p>Built SCD logic, automated notebook workflows, led client meetings.</p>
+                </div>
+            </div>
+        </div>
 
-  <section class="company">
-    <h2>Capgemini India, Hyderabad (Oct 2021 - Present)</h2>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Capgemini India</h2>
+                    <p>Project: Microsoft</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Skills</h3>
+                    <p>ADF, Synapse, ADLS Gen2, Databricks, PySpark, Azure Function Apps, REST APIs, Azure Purview</p>
+                    <h3>Project Details</h3>
+                    <p>Data orchestration, integration, CI/CD pipelines, Agile practices.</p>
+                    <h3>My Role</h3>
+                    <p>Built ADF pipelines, automated scripts, integrated Azure services.</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="project" onclick="toggleDetails('takeda')">
-      <strong>Takeda</strong> – Data Lake Modernization
-    </div>
-    <div class="project-details" id="takeda">
-      <p class="skills">Skills: PySpark, Python, SQL, Databricks, AWS S3, Delta Lake</p>
-      <p><strong>Project Description:</strong> Built a modern data lake on AWS & Databricks for KPI reporting and data analysis.</p>
-      <p><strong>My Role:</strong></p>
-      <ul>
-        <li>Created scripts for KPI evaluation using SCD Type 1 & Type 2 logic</li>
-        <li>Built parameterized notebook runners using workflows</li>
-        <li>Integrated Git for version control, reducing maintenance by 80%</li>
-        <li>Led client demos and improved delivery satisfaction by 40%</li>
-      </ul>
-    </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Capgemini India</h2>
+                    <p>Project: Johnson & Johnson</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Skills</h3>
+                    <p>AWS S3, PySpark, EC2, Redshift Spectrum, Parquet</p>
+                    <h3>Project Details</h3>
+                    <p>Retention policies, Parquet conversion, optimized Redshift queries.</p>
+                    <h3>My Role</h3>
+                    <p>Handled data cleanup, transformation, and storage optimizations.</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="project" onclick="toggleDetails('microsoft')">
-      <strong>Microsoft</strong> – Enterprise Data Platform
-    </div>
-    <div class="project-details" id="microsoft">
-      <p class="skills">Skills: ADF, Synapse, PySpark, Databricks, Azure Function, REST API</p>
-      <p><strong>Project Description:</strong> Enterprise data lakehouse migration to Azure platform.</p>
-      <p><strong>My Role:</strong></p>
-      <ul>
-        <li>Developed ADF pipelines and Synapse queries</li>
-        <li>Used Azure Purview for metadata management</li>
-        <li>Automated Search & Replace using PySpark</li>
-        <li>Integrated APIs with Function App for pipeline triggers</li>
-      </ul>
-    </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Capgemini India</h2>
+                    <p>Project: Equans</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Skills</h3>
+                    <p>Palantir Foundry, PySpark, Code Repository</p>
+                    <h3>Project Details</h3>
+                    <p>Updated transformation logic, data lineage, reusable data models.</p>
+                    <h3>My Role</h3>
+                    <p>Optimized logic, managed data modeling and lineage tracing.</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="project" onclick="toggleDetails('jnj')">
-      <strong>Johnson & Johnson</strong> – Analytics Modernization
-    </div>
-    <div class="project-details" id="jnj">
-      <p class="skills">Skills: AWS S3, EC2, PySpark, Redshift, Cloudberry</p>
-      <p><strong>Project Description:</strong> Transformed and migrated on-prem financial data to cloud warehouse.</p>
-      <p><strong>My Role:</strong></p>
-      <ul>
-        <li>Converted CSV to Parquet using PySpark, improving query speed by 20%</li>
-        <li>Implemented Redshift Spectrum to query external S3 data directly</li>
-        <li>Defined and enforced data retention policies on S3</li>
-      </ul>
-    </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Sears Holdings India</h2>
+                    <p>Role: Associate Engineer</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Skills</h3>
+                    <p>Control-M, AWS S3, Unix</p>
+                    <h3>Project Details</h3>
+                    <p>Job monitoring, automation, IAM policy configuration.</p>
+                    <h3>My Role</h3>
+                    <p>Automated file ops, resolved job failures, secured S3 workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project" onclick="toggleDetails('equans')">
-      <strong>Equans</strong> – Financial Forecasting with Foundry
-    </div>
-    <div class="project-details" id="equans">
-      <p class="skills">Skills: Palantir Foundry, PySpark</p>
-      <p><strong>Project Description:</strong> Migrated Excel-based financial models to automated PySpark pipelines.</p>
-      <p><strong>My Role:</strong></p>
-      <ul>
-        <li>Updated data models for quarterly forecasts</li>
-        <li>Maintained lineage using Foundry tools for traceability</li>
-        <li>Improved reliability of reporting by 20%</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="company">
-    <h2>Sears Holdings India, Hyderabad (Oct 2019 - Aug 2021)</h2>
-
-    <div class="project" onclick="toggleDetails('sears')">
-      <strong>Data Job Monitoring and Automation</strong>
-    </div>
-    <div class="project-details" id="sears">
-      <p class="skills">Skills: Control-M, Unix, AWS S3</p>
-      <p><strong>Project Description:</strong> Managed backend job scheduling, data file operations and S3 maintenance.</p>
-      <p><strong>My Role:</strong></p>
-      <ul>
-        <li>Monitored and troubleshooted job failures in Control-M</li>
-        <li>Automated file processes in Unix</li>
-        <li>Handled S3 bucket configurations for backups and policy enforcement</li>
-      </ul>
-    </div>
-  </section>
-
-  <script>
-    function toggleDetails(id) {
-      const el = document.getElementById(id);
-      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
-    }
-  </script>
-
+    <footer>
+        <p>ðŸ”¹ Delivering reliable, high-performance data engineering solutions ðŸ”¹</p>
+    </footer>
 </body>
 </html>
