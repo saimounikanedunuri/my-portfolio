@@ -1,73 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Experience - Azure Data Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.json"></script>
+  <meta charset="UTF-8">
+  <title>Work Experience</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #222;
+    }
+
+    .company {
+      margin-bottom: 25px;
+    }
+
+    .company h2 {
+      font-size: 24px;
+      background-color: #004080;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .project {
+      background-color: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-left: 4px solid #004080;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .project:hover {
+      background-color: #f0f4f8;
+    }
+
+    .project-details {
+      display: none;
+      padding: 10px 15px;
+      background-color: #f9f9f9;
+      border-left: 4px solid #0099cc;
+      border-radius: 0 0 8px 8px;
+      margin-top: -10px;
+    }
+
+    .skills {
+      font-style: italic;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>💼 Work Experience</h1>
-        <p>Showcasing my career achievements and projects</p>
-        <nav>
-            <a href="index.html">🏠 Home</a>
-            <a href="skills.html">💡 Skills</a>
-            <a href="work.html" class="active">💼 Work</a>
-            <a href="projects.html">📂 Projects</a>
-            <a href="contact.html">📩 Contact</a>
-        </nav>
-        <button id="theme-toggle">🌙 Dark Mode</button>
-    </header>
 
-    <section class="work-container">
-        <div class="work-item">
-            <h2>Capgemini India - Azure Data Engineer <span>Oct 2021 - Present</span></h2>
-            <h3>Microsoft</h3>
-            <ul>
-                <li>🛠 Streamlined data orchestration by building and maintaining ADF pipelines, reducing manual intervention by 40%.</li>
-                <li>📊 Enhanced large-scale data management using Synapse Analytics and ADLS Gen2, achieving a 25% gain in efficiency.</li>
-                <li>⚡ Accelerated processing workflows by 30% through data cleaning and transformation in Databricks using PySpark.</li>
-                <li>🔗 Boosted system integration by 20% by creating Azure Function Apps and utilizing REST APIs for CRUD operations.</li>
-                <li>🔍 Elevated data transparency by 35% through robust metadata tracking using Azure Purview for governance.</li>
-                <li>⏳ Reduced manual input time by 30% with a custom-built Search and Replace automation tool.</li>
-                <li>🔄 Simplified pull request workflows by developing a PowerShell-based PR automation tool, saving 20% developer time.</li>
-            </ul>
-        </div>
+  <header>
+    <h1>💼 Work Experience</h1>
+    <p>Tap a project to see what I worked on</p>
+  </header>
 
-        <div class="work-item">
-            <h3>Johnson & Johnson</h3>
-            <ul>
-                <li>📉 Lowered storage expenditure by 30% by implementing effective retention policies within AWS S3.</li>
-                <li>⏱ Optimized query execution times by 20% by converting CSV files to Parquet format.</li>
-                <li>⚙️ Enhanced data pipeline speed by 25% using PySpark on EC2 for transformation, cleaning, and schema validation.</li>
-                <li>🚀 Maximized Redshift performance by leveraging Spectrum for direct querying on Parquet files stored in S3.</li>
-            </ul>
-        </div>
+  <section class="company">
+    <h2>Capgemini India, Hyderabad (Oct 2021 - Present)</h2>
 
-        <div class="work-item">
-            <h3>Equans</h3>
-            <ul>
-                <li>⚡ Updated PySpark transformation logic in the Code Repository, leading to a 30% boost in runtime efficiency.</li>
-                <li>📊 Standardized financial reporting by designing reusable data models in Palantir Foundry, increasing reliability by 20%.</li>
-                <li>🔍 Ensured data traceability and quicker issue resolution by managing end-to-end lineage in Foundry.</li>
-            </ul>
-        </div>
+    <div class="project" onclick="toggleDetails('takeda')">
+      <strong>Takeda</strong> – Data Lake Modernization
+    </div>
+    <div class="project-details" id="takeda">
+      <p class="skills">Skills: PySpark, Python, SQL, Databricks, AWS S3, Delta Lake</p>
+      <p><strong>Project Description:</strong> Built a modern data lake on AWS & Databricks for KPI reporting and data analysis.</p>
+      <p><strong>My Role:</strong></p>
+      <ul>
+        <li>Created scripts for KPI evaluation using SCD Type 1 & Type 2 logic</li>
+        <li>Built parameterized notebook runners using workflows</li>
+        <li>Integrated Git for version control, reducing maintenance by 80%</li>
+        <li>Led client demos and improved delivery satisfaction by 40%</li>
+      </ul>
+    </div>
 
-        <div class="work-item">
-            <h2>Sears Holdings India - Azure Data Engineer <span>Oct 2019 - Aug 2021</span></h2>
-            <ul>
-                <li>🔧 Automated end-to-end workflows using ADF, reducing manual effort by 35%.</li>
-                <li>📦 Managed Azure Blob Storage for optimized file handling, resulting in 30% storage cost savings.</li>
-                <li>⚡ Diagnosed and resolved Control-M job failures, reducing incident resolution time by 30%.</li>
-                <li>🐍 Scripted daily automation tasks in Python, improving task accuracy and reducing overhead.</li>
-            </ul>
-        </div>
-    </section>
+    <div class="project" onclick="toggleDetails('microsoft')">
+      <strong>Microsoft</strong> – Enterprise Data Platform
+    </div>
+    <div class="project-details" id="microsoft">
+      <p class="skills">Skills: ADF, Synapse, PySpark, Databricks, Azure Function, REST API</p>
+      <p><strong>Project Description:</strong> Enterprise data lakehouse migration to Azure platform.</p>
+      <p><strong>My Role:</strong></p>
+      <ul>
+        <li>Developed ADF pipelines and Synapse queries</li>
+        <li>Used Azure Purview for metadata management</li>
+        <li>Automated Search & Replace using PySpark</li>
+        <li>Integrated APIs with Function App for pipeline triggers</li>
+      </ul>
+    </div>
 
-    <footer>
-        <p>🔹 Continuously enhancing my skills and delivering high-impact data solutions! 🔹</p>
-    </footer>
+    <div class="project" onclick="toggleDetails('jnj')">
+      <strong>Johnson & Johnson</strong> – Analytics Modernization
+    </div>
+    <div class="project-details" id="jnj">
+      <p class="skills">Skills: AWS S3, EC2, PySpark, Redshift, Cloudberry</p>
+      <p><strong>Project Description:</strong> Transformed and migrated on-prem financial data to cloud warehouse.</p>
+      <p><strong>My Role:</strong></p>
+      <ul>
+        <li>Converted CSV to Parquet using PySpark, improving query speed by 20%</li>
+        <li>Implemented Redshift Spectrum to query external S3 data directly</li>
+        <li>Defined and enforced data retention policies on S3</li>
+      </ul>
+    </div>
+
+    <div class="project" onclick="toggleDetails('equans')">
+      <strong>Equans</strong> – Financial Forecasting with Foundry
+    </div>
+    <div class="project-details" id="equans">
+      <p class="skills">Skills: Palantir Foundry, PySpark</p>
+      <p><strong>Project Description:</strong> Migrated Excel-based financial models to automated PySpark pipelines.</p>
+      <p><strong>My Role:</strong></p>
+      <ul>
+        <li>Updated data models for quarterly forecasts</li>
+        <li>Maintained lineage using Foundry tools for traceability</li>
+        <li>Improved reliability of reporting by 20%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="company">
+    <h2>Sears Holdings India, Hyderabad (Oct 2019 - Aug 2021)</h2>
+
+    <div class="project" onclick="toggleDetails('sears')">
+      <strong>Data Job Monitoring and Automation</strong>
+    </div>
+    <div class="project-details" id="sears">
+      <p class="skills">Skills: Control-M, Unix, AWS S3</p>
+      <p><strong>Project Description:</strong> Managed backend job scheduling, data file operations and S3 maintenance.</p>
+      <p><strong>My Role:</strong></p>
+      <ul>
+        <li>Monitored and troubleshooted job failures in Control-M</li>
+        <li>Automated file processes in Unix</li>
+        <li>Handled S3 bucket configurations for backups and policy enforcement</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
 </body>
 </html>
