@@ -1,79 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Experience - Azure Data Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .work-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Adds space between cards */
+    }
+
+    .work-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    }
+
+    .work-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .work-details {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>💼 Work Experience</h1>
-        <p>Click on each card to view more details</p>
-        <nav>
-            <a href="index.html">🏠 Home</a>
-            <a href="skills.html">💡 Skills</a>
-            <a href="work.html" class="active">💼 Work</a>
-            <a href="projects.html">📂 Projects</a>
-            <a href="contact.html">📩 Contact</a>
-        </nav>
-    </header>
 
-    <section class="card-grid">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>Capgemini India</h2>
-                    <p>Project: Takeda</p>
-                </div>
-                <div class="flip-card-back">
-                    <h3>Skills</h3>
-                    <p>PySpark, Python, SQL, Spark, Databricks, AWS, S3, Delta, PostgreSQL</p>
-                    <h3>Project Details</h3>
-                    <p>Scripted KPIs, automated workflows, improved logging, Git integration.</p>
-                    <h3>My Role</h3>
-                    <p>Built SCD logic, automated notebook workflows, led client meetings.</p>
-                </div>
-            </div>
-        </div>
+  <h1>Work Experience</h1>
 
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>Capgemini India</h2>
-                    <p>Project: Microsoft</p>
-                </div>
-                <div class="flip-card-back">
-                    <h3>Skills</h3>
-                    <p>ADF, Synapse, ADLS Gen2, Databricks, PySpark, Azure Function Apps, REST APIs, Azure Purview</p>
-                    <h3>Project Details</h3>
-                    <p>Data orchestration, integration, CI/CD pipelines, Agile practices.</p>
-                    <h3>My Role</h3>
-                    <p>Built ADF pipelines, automated scripts, integrated Azure services.</p>
-                </div>
-            </div>
-        </div>
+  <div class="work-container">
+    
+    <div class="work-card">
+      <div class="work-title">Capgemini (Client: Johnson & Johnson)</div>
+      <div class="work-details">
+        Worked on AWS Data Engineering pipeline using S3, Redshift, PySpark in Databricks, EC2 (WinSCP), and Control-M. Built external tables and automated jobs that improved processing and reduced costs.
+      </div>
+    </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>Capgemini India</h2>
-                    <p>Project: XYZ Healthcare</p>
-                </div>
-                <div class="flip-card-back">
-                    <h3>Skills</h3>
-                    <p>Azure Synapse, PySpark, Data Engineering, SQL, Azure Data Factory</p>
-                    <h3>Project Details</h3>
-                    <p>Implemented a data pipeline for patient data processing and analytics.</p>
-                    <h3>My Role</h3>
-                    <p>Developed ETL processes, optimized queries, and ensured data integrity.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="work-card">
+      <div class="work-title">Sears Holdings</div>
+      <div class="work-details">
+        Developed and maintained ETL pipelines using Python and SQL. Worked with large retail datasets to extract insights, helping improve sales forecasting accuracy by 20%.
+      </div>
+    </div>
 
-    <footer>
-        <p>🌟 Passionate about Data & Cloud Innovation 🌟</p>
-    </footer>
+    <!-- Add more cards as needed -->
+
+  </div>
+
 </body>
 </html>
